@@ -1,5 +1,5 @@
 <?php
-  require_once './inc/database.php';
+  require_once './database.php';
   $product_id = $_POST['product_id'];
   $ok = true;
 
@@ -12,6 +12,6 @@
     $sql = "DELETE FROM products WHERE product_id = '$product_id'";
     $conn->exec($sql);
     $conn = null;
-    HEADER( 'Location: ./display-product.php');
+    HEADER( 'Location: ../display-product.php');
   }
     ?>
